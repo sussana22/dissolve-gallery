@@ -152,6 +152,8 @@ main section{
 }
 
 .gallery .images{
+    position:relative;
+    height:720px;
     width:940px;
     margin:20px auto;
     padding:10px;
@@ -159,6 +161,9 @@ main section{
 }
 
 .gallery .images img{
+    position:absolute;
+    top:10px;
+    left:10px;
 }
 
 .gallery .thumbs{
@@ -172,6 +177,8 @@ main section{
     border:#666666 2px solid;
     margin:4px;
     width:69px;
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
 }
 
 .gallery .thumbs img.selected{
@@ -180,6 +187,7 @@ main section{
 
 .gallery .thumbs img:hover{
     cursor:pointer;
+opacity:1;
 }
 
 .gallery .prev-btn,
